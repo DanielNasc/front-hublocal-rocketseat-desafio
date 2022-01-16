@@ -1,7 +1,5 @@
-import './styles/global.css';
+import Page from "./components/Page";
 
 export function App() {
-  return (
-    <h1>Hello, World!</h1>
-  )
+  return <Page />;
 }
