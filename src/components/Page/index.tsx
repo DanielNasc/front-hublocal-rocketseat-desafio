@@ -1,21 +1,27 @@
-import Slide from "../Slide/Generic";
-import Bottom from "../Slide/Bottom";
+import { Slide } from "../Slide/Generic";
+import { Bottom } from "../Slide/Bottom";
 import { Header } from "../Slide/Header";
-import SlideWrapper from "../SlideWrapper";
+import { EmailInput } from "../EmailInput";
+import { SlideWrapper } from "../SlideWrapper";
+import texts from "./texts.json";
+import test from "../../assets/img/slides/slide-1.png";
 
 export default function Page() {
   return (
     <main>
       <SlideWrapper>
         <Header />
-        {["sec1", "sec2", "sec3", "sec4"].map((sec) => (
+        {texts.sections.map((text, index) => (
           <Slide
-            key={sec}
-            title={sec}
-            paragraph={`This is the ${sec} of the page`}
+            key={index}
+            title={text.title}
+            paragraph={text.paragraph}
+            background={test}
           />
         ))}
-        <Bottom />
+        <Bottom>
+          <EmailInput />
+        </Bottom>
       </SlideWrapper>
     </main>
   );

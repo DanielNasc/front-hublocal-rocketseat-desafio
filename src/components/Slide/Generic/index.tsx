@@ -1,7 +1,14 @@
 import React from "react";
 import "./styles.scss";
 
-const Slide: React.FC<SlideProps> = (props) => {
+interface SlideProps {
+  title: string;
+  paragraph?: string;
+  background?: string;
+  children?: React.ReactNode;
+}
+
+export const Slide: React.FC<SlideProps> = (props) => {
   return (
     <div
       className="slide"
@@ -10,9 +17,8 @@ const Slide: React.FC<SlideProps> = (props) => {
       })}
     >
       <h1>{props.title}</h1>
-      <p> {props.paragraph} </p>
+      {props.paragraph && <p>{props.paragraph}</p>}
+      {props.children}
     </div>
   );
 };
-
-export default Slide;

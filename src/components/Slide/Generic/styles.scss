@@ -15,8 +15,9 @@
     background-attachment: fixed;
 
     h1 {
-        font-size: 3rem;
+        text-align: center;
         margin-bottom: 3rem;
+        margin-top: 3rem;
     }
 
     p {
@@ -25,3 +26,40 @@
         
     }
 }
+
+.Header, .Bottom { 
+    .slide {
+
+        color: #fff;
+        text-shadow: 0 0 25px rgba(0,0,0,60);
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        justify-content: center;
+        align-items: inherit;
+        padding: 5%;
+
+        h1 {
+            font-size: 2.5rem;
+            
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
+    

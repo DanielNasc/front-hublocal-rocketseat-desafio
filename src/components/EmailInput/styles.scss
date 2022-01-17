@@ -1,0 +1,45 @@
+$height: 3rem;
+$input_width: 25rem;
+
+.email-input {
+    display: flex;
+    align-items: center;
+
+    input {
+        width: $input_width;
+        height: $height;
+        border: none;
+        padding: 1rem;
+        margin-right: 1rem;
+        outline: none;
+        box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.349);
+    }
+
+    button {
+        height: $height;
+        width: $input_width / 5;
+        border: none;
+        background-color: #8fe5d0;
+
+        &:hover {
+            background-color: #7ed4c4;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .email-input {
+        flex-direction: column;
+        align-items: flex-start;
+
+        input {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+}
+
