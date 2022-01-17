@@ -1,13 +1,21 @@
-import Slide from "../Slide";
+import Slide from "../Slide/Generic";
+import Bottom from "../Slide/Bottom";
+import { Header } from "../Slide/Header";
 import SlideWrapper from "../SlideWrapper";
 
 export default function Page() {
   return (
     <main>
       <SlideWrapper>
-        {["sec1", "sec2", "sec3"].map((sec, i) => (
-          <Slide key={i} />
+        <Header />
+        {["sec1", "sec2", "sec3", "sec4"].map((sec) => (
+          <Slide
+            key={sec}
+            title={sec}
+            paragraph={`This is the ${sec} of the page`}
+          />
         ))}
+        <Bottom />
       </SlideWrapper>
     </main>
   );
