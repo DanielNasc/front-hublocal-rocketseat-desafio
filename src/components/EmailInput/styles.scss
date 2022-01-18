@@ -17,7 +17,7 @@ $input_width: 25rem;
 
     button {
         height: $height;
-        width: $input_width / 5;
+        width: calc($input_width / 5);
         border: none;
         background-color: #8fe5d0;
 

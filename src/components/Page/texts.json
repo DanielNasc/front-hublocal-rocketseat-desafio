@@ -2,8 +2,11 @@
     "sections": [
         {
             "title": "É aí que entra a HubLocal",
-            "paragraph": "A HubLocal impulsiona vendas, aumenta o fluxo de clientes e ligações dos pontos de vendas da sua empresa na internet em 50 mecanismos de buscas de forma totalmente automatizada.",
-            "image": "../../assets/img/slides"
+            "paragraph": "A HubLocal impulsiona vendas, aumenta o fluxo de clientes e ligações dos pontos de vendas da sua empresa na internet em 50 mecanismos de buscas de forma totalmente automatizada."
+        },
+        {
+            "title": "Saiba de onde os seus clientes estão vindo.",
+            "paragraph": "Acompanhe os insights da sua empresa tendo acesso a poderosos relatórios que monitoram todas as visitas e ligações para o seu estabelecimento, mostrando como os seus clientes encontraram sua empresa e o que eles fizeram quando a viram nas pesquisas. "
         }
     ]
 }
